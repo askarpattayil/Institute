@@ -1,0 +1,150 @@
+﻿@{
+    ViewBag.Title = "Institute";
+    Layout = null;
+}
+
+<link href="~/Main/css/style.css" rel="stylesheet">
+<link href="~/Main/css/style-responsive.css" rel="stylesheet">
+
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+@Scripts.Render("~/bundles/angular")
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+
+<section class="wrapper" style="background-color:#b9b4b4">
+
+    <div class="row mt" style="margin-left:45px;margin-right:45px;">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="form-panel" style="margin-left:0px;">
+
+
+
+                <div class="form-panel">
+                    <h4 class="mb"><i class=""></i> Institute Registration</h4>
+                </div>
+                @using (Html.BeginForm("EmployeeRegistration", "Employee", FormMethod.Post, new
+                {
+                    enctype = "multipart/form-data"
+                }))
+                {
+                    @*< form class="form-inline" role="form" style="margin-left:25px;" >*@
+                    <div class="row mt">
+                        <div>
+                            <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                                <label class="control-label" style="">Institue Name</label>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                                <input type="text" class="form-control" name="InstitutionName" id="exampleInputEmail2" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                            <label class="control-label ">Location</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                            <input type="text" class="form-control" name="Area" id="exampleInputPassword2" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row mt">
+
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                            <label class="control-label" style="">Address 1</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                            <input type="text" class="form-control " name="Address1" id="exampleInputEmail2" autocomplete="off">
+                        </div>
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                            <label class="control-label " style="">Address 2</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                            <input type="text" class="form-control" name="Address2" id="exampleInputPassword2" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row mt">
+
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                            <label class="control-label" style="">Address 3</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                            <input type="text" class="form-control " name="Address3" id="exampleInputEmail2" autocomplete="off">
+                        </div>
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                            <label class="control-label  " style="">TRN</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                            <input type="text" class="form-control" name="TRN" id="exampleInputPassword2" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row mt">
+
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                            <label class="control-label" style="">Building</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                            <input type="text" class="form-control " name="Building" id="exampleInputEmail2" autocomplete="off">
+                        </div>
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                            <label class="control-label  " style="">Room No.</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                            <input type="text" class="form-control" name="Room" id="exampleInputPassword2" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row mt">
+
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                            <label class="control-label" style="">Mobile</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                            <input type="text" class="form-control " name="Phone
+                                   " id="exampleInputEmail2" autocomplete="off">
+                        </div>
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                            <label class="control-label  " style="">Email</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                            <input type="email" class="form-control" name="Email" id="exampleInputPassword2" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row mt">
+
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                            <label class="control-label" style="">Website</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                            <input type="text" class="form-control " name="Website" id="exampleInputEmail2" autocomplete="off">
+                        </div>
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                            <label class="control-label  " style="">Short Name</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                            <input type="text" class="form-control" name="ShortName" id="exampleInputPassword2" autocomplete="off">
+                        </div>
+
+                    </div>
+                    <div class="row mt">
+
+
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                            <label class="control-label" style="">Upload Logo</label>
+                        </div>
+                        <div class="form-group col-lg-3 col-md-3 col-sm-3 mb">
+                            <input type="file" name="file" id="file" class="form-control" multiple>
+                        </div>
+                        <div class="form-group col-lg-12 col-md-12 col-sm-12 mb">
+
+                            <button type="submit" runat="server" class="btn btn-primary notika-btn-primary waves-effect a-prevent"  name="InstituteInsert" formmethod="post" formaction="InstituteInsert" id="btnUpdate"><i class="fa fa-upload"></i>Insert</button>
+
+                        </div>
+                    </div>
+
+                }
+            </div>
+            <!-- /form-panel -->
+        </div>
+        <!-- /col-lg-12 -->
+    </div>
+    <!-- /row -->
+</section>
+<!-- /wrapper -->

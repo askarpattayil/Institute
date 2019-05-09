@@ -1,0 +1,166 @@
+﻿
+@{
+    ViewBag.Title = "BatchMaster";
+}
+
+<section id="main-content">
+    <section class="wrapper">
+        <h3><i @*class="fa fa-angle-right"*@></i> </h3>
+
+        <!-- INLINE FORM ELELEMNTS -->
+        <div class="row mt">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-panel">
+                    <div class="form-panel">
+                        <h4 class="mb"><i class=""></i> Batch </h4>
+                    </div>
+                    <form class="form-inline" role="form" style="margin-left:25px;">
+                        <div class="row mt">
+                            <div>
+                                <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                                    <label class="control-label" style="">Batch Name</label>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                                    <input type="hidden" name="ID" class="form-control " id="exampleInputEmail2" autocomplete="off">
+                                    <input type="text" class="form-control " name="BNAME" id="exampleInputEmail2" autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                                <label class="control-label ">Course Name</label>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                                <input type="hidden" class="form-control" name="CID" id="exampleInputPassword2" autocomplete="off">
+                                <input type="text" class="form-control" name="CCODE" id="exampleInputPassword2" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="row mt">
+
+                            <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                                <label class="control-label" style="">Batch Start Date</label>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                                <input type="date" class="form-control " name="BSDATE" id="exampleInputEmail2" autocomplete="off">
+                            </div>
+                            <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                                <label class="control-label " style="">Batch End Date</label>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                                <input type="date" class="form-control" name="BEDATE" id="exampleInputPassword2" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row mt">
+
+                            <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                                <label class="control-label" style="">Batch Start Time</label>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                                <input type="time" class="form-control " name="BSTIME" id="exampleInputEmail2" autocomplete="off">
+                            </div>
+                            <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                                <label class="control-label  " style="">Batch End Time</label>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                                <input type="time" class="form-control"  name="BETIME" id="exampleInputPassword2" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row mt">
+                            <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                                <label class="control-label" style="">Batch Class</label>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                                <input type="number" class="form-control " name="CPERC" id="exampleInputEmail2" autocomplete="off">
+                            </div>
+                            <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                                <label class="control-label" style="">Batch Discount</label>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                                <input type="text" class="form-control " name="BDISC" id="exampleInputEmail2" autocomplete="off">
+                            </div>
+                           
+                        </div>
+                        <div class="row mt">
+
+                            <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                                <label class="control-label  " style="">Batch Fee</label>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                                <input type="number" class="form-control" name="BFEE" id="exampleInputPassword2" autocomplete="off">
+                            </div>
+                            <div class="form-group col-lg-2 col-md-2 col-sm-2 mb">
+                                <label class="control-label  " style="">Remarks</label>
+                            </div>
+                            <div class="form-group col-lg-4 col-md-4 col-sm-4 mb">
+                                <input type="text" multiple class="form-control" name="REMARKS" id="exampleInputPassword2" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row mt">
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12 mb">
+                                <button type="submit" runat="server" style="float:right;background-color:#f76f0c" class="btn btn-primary notika-btn-primary waves-effect a-prevent" name="InstituteRegistration" formmethod="post" formaction="InstituteRegistration" id="btnUpdate"><i class="fa fa-upload"></i> Update</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+                <!-- page start-->
+                <div class="content-panel" style="margin:10px">
+                    <div class="adv-table">
+                        <div id="hidden-table-info_wrapper" class="dataTables_wrapper form-inline" style="margin:15px" role="grid">
+                            <div class="row-fluid">
+                                <div class="">
+                                    <div id="hidden-table-info_length" class="dataTables_length">
+                                        <label>
+                                            <select size="1" name="hidden-table-info_length" aria-controls="hidden-table-info">
+                                                <option value="10" selected="selected">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>
+                                        </label>
+                                        <div class="" style="float:right;" id="hidden-table-info_filter">
+                                            <label>Search: <input type="text" aria-controls="hidden-table-info"></label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="">
+
+                                </div>
+
+                            </div>
+                            <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered dataTable" id="hidden-table-info" aria-describedby="hidden-table-info_info">
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="" style="width: 25px;">Sl No.</th>
+                                        <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="hidden-table-info" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 150px;">Batch Name</th>
+                                        <th class="hidden-phone sorting" role="columnheader" tabindex="0" aria-controls="hidden-table-info" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 242px;">Course Name</th>
+                                        <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="hidden-table-info" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 150px;">Batch Class</th>
+                                        <th class="sorting" role="columnheader" tabindex="0" aria-controls="hidden-table-info" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 150px;">Batch Fee</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                    <tr class="gradeA odd"></tr>
+                                    <tr class="gradeA even"></tr>
+
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                            <div class=" dataTables_paginate paging_bootstrap pagination">
+                                <ul><li class="prev disabled"><a href="#">← Previous</a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li class="next"><a href="#">Next → </a></li></ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- page end-->
+                <!-- /form-panel -->
+            </div>
+            <!-- /col-lg-12 -->
+        </div>
+        <!-- /row -->
+    </section>
+    <!-- /wrapper -->
+</section>
